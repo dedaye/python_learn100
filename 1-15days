@@ -139,3 +139,14 @@ if a + b > c and a + c > b and c + b> a :
     print("三角形的面积：%f" %(math.sqrt(p*(p-a)*(p-b)*(p-c))))
 else:
     print("无法构成三角形！")
+#fc母鸡 mc公鸡 minc小鸡  
+import math
+money = 100
+for fc in range(math.ceil(money/3)):
+	for mc in range (math.ceil(money/5)):
+				minm = 100 - 3*fc -5*mc
+		if minm <100 and fc+mc < 100:
+			minc = minm * 3
+			if minc+fc+mc == 100:
+				print("母鸡%d公鸡%d小鸡%d"%
+					  (fc,mc,minc))
